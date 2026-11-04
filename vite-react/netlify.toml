@@ -1,0 +1,16 @@
+[build]
+  base = "client"             # go into the client folder
+  command = "npm run build"   # build the app
+  publish = "dist"            # serve the dist folder after building
+  functions = "client/netlify/functions" # optional: where your functions live
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# (Optional) Force JS files to be served with the correct MIME type
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Content-Type = "application/javascript"

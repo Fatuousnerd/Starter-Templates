@@ -1,0 +1,35 @@
+
+[workspace]
+members = ["crates/*"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+authors = ["fatuousnerd <calvinkmwaura@gmail.com>"]
+edition = "2024"
+
+[workspace.dependencies]
+toml = { version = "1.0.7", default-features = true, features = [] }
+tracing = { version = "0.1.44", default-features = true, features = ["std"] }
+tracing-subscriber = { version = "0.3.23", default-features = true, features = [
+    "env-filter",
+    "chrono",
+] }
+sys-locale = { version = "0.3.2", default-features = true, features = [] }
+serde = { version = "1.0.228", default-features = true, features = [
+    "derive",
+    "std",
+] }
+clap = { version = "4.6.0", default-features = true, features = [
+    "derive",
+    "std",
+] }
+anyhow = { version = "1.0.102", default-features = true, features = [
+    "backtrace",
+] }
+iced = { version = "0.14.0", default-features = true, features = [
+    "wgpu",
+    "advanced",
+    "smol",
+    "image",
+] }

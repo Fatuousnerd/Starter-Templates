@@ -1,0 +1,29 @@
+{
+  "name": "electron-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "electron --trace-warnings .",
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fatuousnerd/Electron-Starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Fatuousnerd/Electron-Starter/issues"
+  },
+  "homepage": "https://github.com/Fatuousnerd/Electron-Starter#readme",
+  "devDependencies": {
+    "electron": "^42.0.1"
+  },
+  "dependencies": {
+    "zod": "^4.4.3"
+  }
+}
